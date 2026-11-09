@@ -1,0 +1,14 @@
+{
+ "CHEMBL1929": {
+  "all_activities": 1993,
+  "ic50": 1064,
+  "ic50_nM": 1012,
+  "ic50_nM_eq": 830
+ },
+ "CHEMBL3649": {
+  "all_activities": 2450,
+  "ic50": 1488,
+  "ic50_nM": 1412,
+  "ic50_nM_eq": 1344
+ }
+}

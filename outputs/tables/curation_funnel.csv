@@ -1,0 +1,13 @@
+step,n
+All activity records (human + bovine XO),4443
+IC50 only,2552
+Units nM,2424
+Exact values (relation '='),2174
+Positive numeric value,2174
+No ChEMBL data-validity warning,2094
+Not flagged as potential duplicate (citation),1977
+Binding/enzyme assays (type B),1977
+Plausible range (pIC50 2–12),1977
+"Structure standardised (salts, charges)",1973
+Unique compounds after aggregation (median pIC50),1797
+"Unique compounds, high-variance (SD>1) removed",1786

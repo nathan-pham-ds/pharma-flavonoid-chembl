@@ -1,0 +1,207 @@
+{
+ "funnel": [
+  [
+   "All activity records (human + bovine XO)",
+   4443
+  ],
+  [
+   "IC50 only",
+   2552
+  ],
+  [
+   "Units nM",
+   2424
+  ],
+  [
+   "Exact values (relation '=')",
+   2174
+  ],
+  [
+   "Positive numeric value",
+   2174
+  ],
+  [
+   "No ChEMBL data-validity warning",
+   2094
+  ],
+  [
+   "Not flagged as potential duplicate (citation)",
+   1977
+  ],
+  [
+   "Binding/enzyme assays (type B)",
+   1977
+  ],
+  [
+   "Plausible range (pIC50 2\u201312)",
+   1977
+  ],
+  [
+   "Structure standardised (salts, charges)",
+   1973
+  ],
+  [
+   "Unique compounds after aggregation (median pIC50)",
+   1797
+  ],
+  [
+   "Unique compounds, high-variance (SD>1) removed",
+   1786
+  ]
+ ],
+ "n_high_variance_removed": 11,
+ "n_compounds": 1786,
+ "n_flavonoids": 170,
+ "classes": [
+  {
+   "flavonoid_class": "non-flavonoid",
+   "n": 1616,
+   "median_pIC50": 6.699480900891103,
+   "pct_active": 77.8
+  },
+  {
+   "flavonoid_class": "chalcone",
+   "n": 74,
+   "median_pIC50": 5.6338031200885155,
+   "pct_active": 70.3
+  },
+  {
+   "flavonoid_class": "flavone",
+   "n": 37,
+   "median_pIC50": 5.049652612773801,
+   "pct_active": 54.1
+  },
+  {
+   "flavonoid_class": "flavonol",
+   "n": 28,
+   "median_pIC50": 5.186815994448633,
+   "pct_active": 64.3
+  },
+  {
+   "flavonoid_class": "aurone",
+   "n": 14,
+   "median_pIC50": 6.36700181475246,
+   "pct_active": 100.0
+  },
+  {
+   "flavonoid_class": "flavanone",
+   "n": 11,
+   "median_pIC50": 4.8407336689065055,
+   "pct_active": 36.4
+  },
+  {
+   "flavonoid_class": "isoflavone",
+   "n": 4,
+   "median_pIC50": 5.033256356075647,
+   "pct_active": 50.0
+  },
+  {
+   "flavonoid_class": "flavan",
+   "n": 2,
+   "median_pIC50": 5.589275990491235,
+   "pct_active": 50.0
+  }
+ ],
+ "sar": [
+  {
+   "feature": "5,7-di-OH on A ring",
+   "n_with": 37,
+   "median_with": 5.48,
+   "n_without": 28,
+   "median_without": 4.97,
+   "delta": 0.51
+  },
+  {
+   "feature": "3',4'-catechol on B ring",
+   "n_with": 14,
+   "median_with": 5.12,
+   "n_without": 51,
+   "median_without": 5.12,
+   "delta": 0.0
+  },
+  {
+   "feature": "3-OH on C ring (flavonol)",
+   "n_with": 12,
+   "median_with": 5.43,
+   "n_without": 53,
+   "median_without": 5.01,
+   "delta": 0.42
+  },
+  {
+   "feature": "Sugar attached (glycoside)",
+   "n_with": 12,
+   "median_with": 4.73,
+   "n_without": 53,
+   "median_without": 5.28,
+   "delta": -0.56
+  }
+ ],
+ "planar_median": 5.115204636051018,
+ "nonplanar_median": 4.8407336689065055,
+ "n_planar": 65,
+ "n_nonplanar": 13,
+ "performance": [
+  {
+   "split": "scaffold",
+   "model": "Random forest",
+   "r2": 0.725,
+   "r2_lcl": 0.654,
+   "r2_ucl": 0.784,
+   "rmse": 0.734,
+   "auc": 0.905,
+   "n_train": 1429,
+   "n_test": 357
+  },
+  {
+   "split": "scaffold",
+   "model": "Gradient boosting",
+   "r2": 0.719,
+   "r2_lcl": 0.663,
+   "r2_ucl": 0.77,
+   "rmse": 0.742,
+   "auc": 0.895,
+   "n_train": 1429,
+   "n_test": 357
+  },
+  {
+   "split": "random",
+   "model": "Random forest",
+   "r2": 0.825,
+   "r2_lcl": 0.771,
+   "r2_ucl": 0.87,
+   "rmse": 0.587,
+   "auc": 0.941,
+   "n_train": 1426,
+   "n_test": 360
+  },
+  {
+   "split": "random",
+   "model": "Gradient boosting",
+   "r2": 0.814,
+   "r2_lcl": 0.763,
+   "r2_ucl": 0.86,
+   "rmse": 0.604,
+   "auc": 0.938,
+   "n_train": 1426,
+   "n_test": 360
+  },
+  {
+   "split": "scaffold",
+   "model": "Mean baseline",
+   "r2": -0.005,
+   "r2_lcl": NaN,
+   "r2_ucl": NaN,
+   "rmse": 1.403,
+   "auc": NaN,
+   "n_train": 1429,
+   "n_test": 357
+  }
+ ],
+ "flavonoid_test_n": 27,
+ "flavonoid_test_rmse": 0.5202474828028739,
+ "species": {
+  "bovine": 1166,
+  "human": 591,
+  "both": 29
+ }
+}
